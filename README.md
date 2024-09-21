@@ -23,6 +23,7 @@ Este projeto implementa o **Algoritmo de Dijkstra** (aquele que encontra o camin
 ## Instalação
 
 Nenhuma instalação necessária. Basta abrir o arquivo HTML no seu navegador para rodar o algoritmo.
+Pode ser utilizado via "node", para ser visualizado pelo terminal de operações.
 
 Ou você pode acessar a aplicação em: https://dijkstra-algorithm-javascript.vercel.app
 
