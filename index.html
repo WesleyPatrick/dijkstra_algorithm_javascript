@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo de Dijkstras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="graph-container">
+            <img src="src/graph.png" alt="grafo">
+        </div>
+
+        <div class="container">
+            <h1>Selecione as Cidades</h1>
+
+            <form id="dijkstraForm">
+                <div class="form-group">
+                    <label for="cidadeInicial">Cidade Inicial:</label>
+                    <select id="cidadeInicial" name="cidadeInicial">
+                        <option value="0">RSL</option>
+                        <option value="1">AUR</option>
+                        <option value="2">ITU</option>
+                        <option value="3">IMB</option>
+                        <option value="4">VID</option>
+                        <option value="5">PET</option>
+                        <option value="6">CHAP</option>
+                        <option value="7">LAU</option>
+                        <option value="8">ROE</option>
+                        <option value="9">TAI</option>
+                        <option value="10">SAL</option>
+                        <option value="11">RCA</option>
+                        <option value="12">STA</option>
+                        <option value="13">PU</option>
+                        <option value="14">MIR</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cidadeDestino">Cidade de Destino:</label>
+                    <select id="cidadeDestino" name="cidadeDestino">
+                        <option value="0">RSL</option>
+                        <option value="1">AUR</option>
+                        <option value="2">ITU</option>
+                        <option value="3">IMB</option>
+                        <option value="4">VID</option>
+                        <option value="5">PET</option>
+                        <option value="6">CHAP</option>
+                        <option value="7">LAU</option>
+                        <option value="8">ROE</option>
+                        <option value="9">TAI</option>
+                        <option value="10">SAL</option>
+                        <option value="11">RCA</option>
+                        <option value="12">STA</option>
+                        <option value="13">PU</option>
+                        <option value="14">MIR</option>
+                    </select>
+                </div>
+
+                <button type="submit">Calcular Caminho</button>
+            </form>
+
+            <div class="result-container" id="resultContainer">
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

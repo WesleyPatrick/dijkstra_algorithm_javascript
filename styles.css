@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #4CAF50;
+    --primary-color-hover: #388E3C;
+    --secondary-color: #2C3E50;
+    --text-color: #ffffff;
+    --background-color: #ecf0f1;
+    --container-bg-color: #ffffff;
+    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --border-radius: 10px;
+    --font-size-large: 26px;
+    --font-size-medium: 18px;
+    --padding: 25px;
+    --input-padding: 12px;
+    --width-max: 1200px;
+    --width-form-container: 40%;
+    --width-graph-container: 50%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--background-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: var(--width-max);
+}
+
+.graph-container {
+    width: var(--width-graph-container);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.container {
+    background-color: var(--container-bg-color);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: var(--width-form-container);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: var(--padding);
+    font-size: var(--font-size-large);
+    color: var(--secondary-color);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: var(--font-size-medium);
+    margin-bottom: 8px;
+    display: block;
+    color: var(--secondary-color);
+}
+
+select {
+    width: 100%;
+    padding: var(--input-padding);
+    font-size: var(--font-size-medium);
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: var(--secondary-color);
+}
+
+button {
+    width: 100%;
+    padding: var(--input-padding);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 6px;
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: var(--primary-color-hover);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.result-container {
+    margin-top: var(--padding);
+    font-size: var(--font-size-medium);
+    color: var(--secondary-color);
+}
