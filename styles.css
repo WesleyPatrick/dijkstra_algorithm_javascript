@@ -3,9 +3,8 @@
     --primary-color-hover: #388E3C;
     --secondary-color: #2C3E50;
     --text-color: #ffffff;
-    --background-color: #ecf0f1;
+    --background-color: #161718;
     --container-bg-color: #ffffff;
-    --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -50,17 +49,15 @@ body {
 }
 
 .graph-container img {
-    max-width: 100%;
+    width: 800px;
     height: auto;
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
 }
 
 .container {
     background-color: var(--container-bg-color);
     padding: var(--padding);
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
     width: var(--width-form-container);
     text-align: center;
 }
@@ -102,13 +99,10 @@ button {
     border-radius: 6px;
     font-size: var(--font-size-medium);
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
     background-color: var(--primary-color-hover);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .result-container {
@@ -116,3 +110,29 @@ button:hover {
     font-size: var(--font-size-medium);
     color: var(--secondary-color);
 }
+
+@media screen and (max-width: 1080px){
+    .graph-container img {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .graph-container {
+        width: 100%;
+        margin-bottom: var(--padding);
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .graph-container img {
+        max-width: 100%;
+    }
+}
+
