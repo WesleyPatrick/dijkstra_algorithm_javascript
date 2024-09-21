@@ -16,11 +16,15 @@
 
 ## Descrição
 
+URL: https://dijkstra-algorithm-javascript.vercel.app (Caso queira apenas visualizar a aplicação.)
+
 Este projeto implementa o **Algoritmo de Dijkstra** (aquele que encontra o caminho mais curto entre os vértices de um grafo) usando JavaScript. Imagine que você tem um mapa de cidades e quer saber o jeito mais rápido (ou menos cansativo) de ir de uma cidade para outra. Este código faz exatamente isso! 💡
 
 ## Instalação
 
 Nenhuma instalação necessária. Basta abrir o arquivo HTML no seu navegador para rodar o algoritmo.
+
+Ou você pode acessar a aplicação em: https://dijkstra-algorithm-javascript.vercel.app
 
 ## Uso
 
